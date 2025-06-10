@@ -1,12 +1,9 @@
-# Aqui estamos "importando" as funções que foram criadas no outro arquivo chamado funcoes.py
-# Assim podem ser usadas essas funções nesse arquivo de testes.
+# Aqui esta "importando" as funções que foram criadas no outro arquivo chamado funcoes.py - Jay
+# Assim podem ser usadas essas funções nesse arquivo de testes. - Jay
 from funcoes import verifica_email, validar_senha, calcular_media, verificar_maior_idade, eh_positivo, status_aluno
 
-# Essa função testa se a função verifica_email() está funcionando direito.
 def test_verifica_email():
-    # Aqui testamos um e-mail que deve estar certo. Se a função retornar "email válido", o teste passa.
     assert verifica_email('teste@gmail.com') == 'email válido'
-    # Aqui testamos um e-mail que está errado (falta o "@"). Então é esperado que a função diga que está "incorreto" no terminal.
     assert verifica_email('teste.com') == 'email incorreto'
 
 
